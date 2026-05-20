@@ -1,29 +1,33 @@
-nav {
-    width: 100%;
-    /*background-color: #3B2F2F;*/
-    background-color: #1A1A1A;
-    padding: 1rem 2rem;
-
-    position: fixed;
-    top: 0;
-    left: 0;
+.nav {
+    position: relative;
+    padding: 10px;
 }
 
+/* Burger Button */
+.burger {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
-nav ul {
+/* Menü standardmäßig versteckt */
+.menu {
     list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
 }
 
-nav a {
-    color: #F5F5F5;
+/* Wenn offen */
+.menu.open {
+    display: flex;
+}
+
+/* optional schöner */
+.menu li a {
     text-decoration: none;
-    font-weight: 500;
-}
-
-nav a:hover {
-    text-decoration: underline;
+    color: black;
 }
