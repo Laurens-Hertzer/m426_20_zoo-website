@@ -8,3 +8,10 @@
   gap: 50px;
   padding: 150px;
 }
+
+.welcome_text {
+  background-color: gray;
+  border: 2px black solid;
+  border-collapse: separate;
+  padding: 8px;
+}
