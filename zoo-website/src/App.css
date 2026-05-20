@@ -188,8 +188,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
-  gap: 250px;
+  gap: 50px;
   padding: 150px;
 }
