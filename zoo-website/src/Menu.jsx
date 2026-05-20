@@ -1,4 +1,5 @@
 import { HashRouter, Route, Routes, Link } from "react-router-dom";
+import "./Menu.css"
 
 export default function Menu(){
 
