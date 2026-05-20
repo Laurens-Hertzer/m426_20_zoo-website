@@ -185,7 +185,11 @@
 
 .welcome_body {
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+
+  gap: 250px;
+  padding: 150px;
 }
