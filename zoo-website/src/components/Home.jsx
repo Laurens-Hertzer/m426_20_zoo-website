@@ -1,8 +1,10 @@
 import welcome_img from '../assets/welcome_img.jpg'
+import zoo_logo from '../assets/logo_zoo.png'
 
 export default function Home() {
     return (
         <>
+            <img src={zoo_logo} width={300}/>
             <div className="welcome_body">
                 <span className="welcome_text"> <h2>Willkommen zum Zoo Zürich</h2>
                 Tauche ein in die faszinierende Welt der Tiere.
