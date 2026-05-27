@@ -10,7 +10,8 @@ export default function Menu() {
 
     return (
         <HashRouter>
-            <img src={ZooImg} alt="Zoo" />
+            {/*<img src={ZooImg} alt="Zoo" />*/}
+            <Link to="/"><img src={ZooImg} alt="Zoo"/></Link>
             <nav className="nav">
 
                 <button
