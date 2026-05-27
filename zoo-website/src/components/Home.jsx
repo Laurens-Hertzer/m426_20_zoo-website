@@ -1,4 +1,4 @@
-import welcome_img from '../assets/welcome_img.jpg'
+import welcome_img from '../../public/welcome_img.jpg'
 
 export default function Home() {
     return (
