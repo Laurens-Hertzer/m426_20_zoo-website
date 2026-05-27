@@ -1,23 +1,24 @@
-import heroImg from './assets/hero.png'
+import {useState} from 'react'
+import websitelogo from '../public/favicon.png'
 import './App.css'
 import Menu from './Menu'
+import Home from "./components/Home.jsx";
+import Tickets from "./components/Tickets.jsx";
+import Impressum from "./components/Impressum.jsx";
 
 function App() {
+  const [count, setCount] = useState(0)
 
-  return (
-    <>
+    return (
         <header>
-            <Menu />
+            <Menu/>
         </header>
-        <div className="welcome_body">
-        <span className="welcome_text">
-          Zubi schegani
-        </span>
-        <img className="welcome_image" src={heroImg} />
-
-      </div>
-    </>
-  )
+    <div>
+        <Tickets/>
+        <Home/>
+            <Impressum/>
+        </div>
+    )
 }
 
 export default App
