@@ -18,8 +18,8 @@
 /* MENU (standardmäßig versteckt) */
 .menu {
     position: absolute;
-    top: 45px;          /* unter dem Burger */
-    right: 0;           /* direkt rechts ausgerichtet */
+    top: 0;          /* unter dem Burger */
+    right: 60px;           /* direkt rechts ausgerichtet */
     display: none;
 
     flex-direction: column;
@@ -51,4 +51,9 @@
 /* HOVER EFFECT */
 .menu li a:hover {
     color: #0077ff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
 }

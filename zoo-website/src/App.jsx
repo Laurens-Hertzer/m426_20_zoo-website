@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Menu from './Menu'
@@ -7,7 +6,9 @@ function App() {
 
   return (
     <>
+        <header>
             <Menu />
+        </header>
         <div className="welcome_body">
         <span className="welcome_text">
           Zubi schegani
