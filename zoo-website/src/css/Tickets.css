@@ -1,0 +1,59 @@
+/* Tickets.css */
+
+.ticket-form {
+    padding: var(--sp-xl);
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.ticket-form h1 {
+    font-family: var(--f-display);
+    color: var(--c-primary);
+    margin-bottom: var(--sp-lg);
+}
+
+.ticket-form p {
+    font-family: var(--f-body);
+    color: var(--c-muted);
+    margin-bottom: var(--sp-sm);
+}
+
+.ticket-form select,
+.ticket-form input {
+    font-family: var(--f-body);
+    font-size: .95rem;
+    border: 1px solid var(--c-border);
+    border-radius: var(--r-sm);
+    padding: var(--sp-sm);
+    background: white;
+    color: var(--c-text);
+    margin-right: var(--sp-md);
+}
+
+.ticket-form select:focus,
+.ticket-form input:focus {
+    outline: 2px solid var(--c-primary);
+}
+
+.ticket-form label {
+    font-family: var(--f-body);
+    font-size: .9rem;
+    color: var(--c-text);
+    display: block;
+    margin-top: var(--sp-md);
+    margin-bottom: var(--sp-xs);
+}
+
+.ticket-form input[disabled] {
+    background: var(--c-surface);
+    color: var(--c-primary);
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-color: var(--c-border);
+}
+
+.ticket-form .selects-row {
+    display: flex;
+    gap: var(--sp-md);
+    margin-bottom: var(--sp-md);
+}

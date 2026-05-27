@@ -1,24 +1,80 @@
-.welcome_body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
+/* === App.css — enthält Nav + globale Styles === */
 
-  gap: 50px;
-  padding: 150px;
+/* NAV CONTAINER */
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+/* BURGER BUTTON */
+.burger {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--c-surface);
+}
+
+/* MENU (standardmäßig versteckt) */
+.menu {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  background: white;
+  padding: 12px;
+  min-width: 180px;
+  box-shadow: var(--shadow);
+  border-radius: var(--r-md);
+  z-index: 200;
+}
+
+/* MENU GEÖFFNET */
+.menu.open {
+  display: flex;
+}
+
+/* LINKS */
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--c-text);
+  font-family: var(--f-body);
+  font-size: .95rem;
+}
+
+/* HOVER EFFECT */
+.menu li a:hover {
+  color: var(--c-primary);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--c-dark);
+  border-bottom: 2px solid var(--c-accent);
+  padding-inline: var(--sp-lg);
 }
 
 .welcome_text {
   background-color: gray;
   border: 2px black solid;
-  border-collapse: separate;
   padding: 8px;
 }
 
 .ticket_head_div {
   position: relative;
-  margin: 10px
+  margin: 10px;
 }
 
 .ticket_buttons {

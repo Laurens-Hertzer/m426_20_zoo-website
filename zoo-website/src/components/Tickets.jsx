@@ -1,4 +1,5 @@
-import {useState} from "react";
+import { useState } from "react"
+import '../css/Tickets.css'                        // NEU
 
 export default function Tickets() {
     const [n_people, setN_people] = useState(1)
@@ -36,13 +37,7 @@ export default function Tickets() {
     }
 
     return (
-        <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            minHeight: '100vh',
-            width: '100%'}}>
+        <div className="ticket-form">
             <div className="ticket_head_div">
                 <h1>Tickets</h1>
                 <h2>20% Rabatt pro Person für Gruppen ab 6 Besuchern!!!</h2>
@@ -75,13 +70,13 @@ export default function Tickets() {
                 <label>Mehr als 5 Personen</label>
                 <input className="check_group" onChange={(e) => gruppen_berechnung(e)} type="checkbox"/>
                 <br/>
-                <label htmlFor="first_name">First Name:</label>
+                <label htmlFor="first_name">Vorname:</label>
                 <input onChange={(e) => setFirst_name(e.target.value)} id="first_name"/>
-                <label htmlFor="last_name">Last Name:</label>
+                <label htmlFor="last_name">Nachname:</label>
                 <input onChange={(e) => setLast_name(e.target.value)} id="last_name"/>
                 <input value={price} disabled/>
                 <div className="ticket_buttons">
-                    <button onClick={() => calculate_price()} type="button">Preis Berechnen</button>
+                    <button onClick={() => calculate_price()} type="button" className="btn btn--primary">Preis Berechnen</button>
                     <button onClick={() => setZeigeBeleg(true)} type="button">Beleg</button>
                 </div>
             </form>
