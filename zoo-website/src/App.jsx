@@ -5,6 +5,7 @@ import Menu from './Menu'
 import Home from "./components/Home.jsx";
 import Tickets from "./components/Tickets.jsx";
 import Impressum from "./components/Impressum.jsx";
+import DataProtection from "./components/DataProtection.jsx"
 
 function App() {
 
