@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { HashRouter, Route, Routes, Link } from "react-router-dom"
 import "./Menu.css"
-import ZooImg from "./assets/Zoo.png"
+import ZooImg from './assets/Zoo.png'
 
 export default function Menu() {
     const [open, setOpen] = useState(false)
