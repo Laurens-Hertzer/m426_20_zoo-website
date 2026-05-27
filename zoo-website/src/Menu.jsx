@@ -2,6 +2,7 @@ import { useState } from "react"
 import { HashRouter, Route, Routes, Link } from "react-router-dom"
 import "./Menu.css"
 import ZooImg from './assets/Zoo.png'
+import DataProtection from "./components/DataProtection.jsx"
 
 export default function Menu() {
     const [open, setOpen] = useState(false)
@@ -32,6 +33,7 @@ export default function Menu() {
 
             <Routes>
                 {/* Routes kommen hier rein */}
+                <Route path="/Datenschutz" element={<DataProtection />} />
             </Routes>
         </HashRouter>
     )
