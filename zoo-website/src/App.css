@@ -15,3 +15,14 @@
   border-collapse: separate;
   padding: 8px;
 }
+
+.ticket_head_div {
+  position: relative;
+  margin: 10px
+}
+
+.ticket_buttons {
+  display: flex;
+  gap: 12px;
+  position: relative;
+}
