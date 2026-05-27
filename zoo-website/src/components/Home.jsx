@@ -1,5 +1,5 @@
-import welcome_img from '../assets/welcome_img.jpg'
-import zoo_logo from '../assets/logo_zoo.png'
+import welcome_img from '../../public/welcome_img.jpg'
+import zoo_logo from '../../public/assets/logo_zoo.png'
 
 export default function Home() {
     return (
@@ -20,3 +20,4 @@ export default function Home() {
         </>
     )
 }
+
