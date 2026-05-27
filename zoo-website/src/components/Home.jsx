@@ -1,3 +1,4 @@
+import '../css/Home.css'
 import welcome_img from '../assets/welcome_img.jpg'
 import zoo_logo from '../assets/logo_zoo.png'
 
