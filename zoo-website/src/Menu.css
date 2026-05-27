@@ -1,0 +1,59 @@
+/* NAV CONTAINER */
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+/* BURGER BUTTON */
+.burger {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* MENU (standardmäßig versteckt) */
+.menu {
+    position: absolute;
+    top: 0;          /* unter dem Burger */
+    right: 60px;           /* direkt rechts ausgerichtet */
+    display: none;
+
+    flex-direction: column;
+    gap: 10px;
+
+    background: white;
+    padding: 12px;
+    min-width: 180px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* MENU GEÖFFNET */
+.menu.open {
+    display: flex;
+}
+
+/* LINKS */
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HOVER EFFECT */
+.menu li a:hover {
+    color: #0077ff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
