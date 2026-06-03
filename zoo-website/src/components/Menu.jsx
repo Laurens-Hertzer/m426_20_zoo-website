@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { HashRouter, Route, Routes, Link } from "react-router-dom"
-import ZooImg from "../App.css"
+import ZooImg from "../assets/favicon.png"
 import DataProtection from "./DataProtection.jsx"
 import Impressum from "./Impressum.jsx"
 import Tickets from "./Tickets.jsx"
@@ -17,7 +17,6 @@ export default function Menu() {
                 <ul className={`menu ${open ? "open" : ""}`}>
                     <li><Link to="/" onClick={closeMenu}>Home Page</Link></li>
                     <li><Link to="/Tickets" onClick={closeMenu}>Tickets bestellen</Link></li>
-                    <li><Link to="/News" onClick={closeMenu}>Zoo News</Link></li>
                     <li><Link to="/Impressum" onClick={closeMenu}>Impressum</Link></li>
                     <li><Link to="/Datenschutz" onClick={closeMenu}>Datenschutz</Link></li>
                 </ul>
