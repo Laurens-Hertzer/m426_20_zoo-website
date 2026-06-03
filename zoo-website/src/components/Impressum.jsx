@@ -1,6 +1,8 @@
+import '../css/Impressum.css'                      // NEU
+
 export default function Impressum() {
     return (
-        <main style={{ fontFamily: 'sans-serif', maxWidth: '600px', margin: '0 auto', padding: '20px', lineHeight: '1.6' }}>
+        <main className="impressum">          {/* NEU: className statt style={} */}
             <h1>Impressum</h1>
 
             <section>
@@ -17,7 +19,7 @@ export default function Impressum() {
                 </p>
             </section>
 
-            <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '20px 0' }} />
+            <hr />                            {/* style={} entfernt */}
 
             <section>
                 <h2>Handelsregistereintrag</h2>
@@ -27,7 +29,7 @@ export default function Impressum() {
                 </p>
             </section>
 
-            <hr style={{ border: '0', borderTop: '1px solid #ccc', margin: '20px 0' }} />
+            <hr />                            {/* style={} entfernt */}
 
             <section>
                 <h2>Technischer Partner</h2>
