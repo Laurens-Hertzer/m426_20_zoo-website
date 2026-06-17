@@ -6,6 +6,7 @@ import Impressum from "./Impressum.jsx"
 import Tickets from "./Tickets.jsx"
 import News from "./News.jsx";
 import NewsStoryDetail from "./NewsStoryDetail.jsx";
+import Home from "./Home.jsx";
 
 export default function Menu() {
 
@@ -31,7 +32,7 @@ export default function Menu() {
             </header>
             <main>
                 <Routes>
-                    {/* Routes kommen hier rein */}
+                    <Route path="/" element={<Home/>}/>
                     <Route path="/Datenschutz" element={<DataProtection/>}/>
                     <Route path="/Impressum" element={<Impressum/>}/>
                     <Route path="/Tickets" element={<Tickets/>}/>
