@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+import {useState} from 'react'
 import './App.css'
 import Home from "./components/Home.jsx";
+import News from "./components/News.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0)
 
-  return (
-    <Home/>
-  )
+    return (
+        <News/>
+    )
 }
 
 export default App

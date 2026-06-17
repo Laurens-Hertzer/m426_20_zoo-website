@@ -1,17 +1,49 @@
 .welcome_body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
-  gap: 50px;
-  padding: 150px;
+    gap: 50px;
+    padding: 150px;
 }
 
 .welcome_text {
-  background-color: gray;
-  border: 2px black solid;
-  border-collapse: separate;
-  padding: 8px;
+    background-color: gray;
+    border: 2px black solid;
+    border-collapse: separate;
+    padding: 8px;
+}
+
+
+.parallel-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%;
+}
+
+.text-truncate-multi {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.storypreview {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 300px;
+    padding: 5px;
+    border: solid 10px red;
+    border-radius: 10px;
+}
+
+.storypreview img {
+    max-width: 300px;
+    height: 200px;
 }
