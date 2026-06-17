@@ -5,6 +5,7 @@ import DataProtection from "./DataProtection.jsx"
 import Impressum from "./Impressum.jsx"
 import Tickets from "./Tickets.jsx"
 import News from "./News.jsx";
+import NewsStoryDetail from "./NewsStoryDetail.jsx";
 
 export default function Menu() {
     const [open, setOpen] = useState(false)
@@ -30,6 +31,7 @@ export default function Menu() {
                 <Route path="/Impressum" element={<Impressum />} />
                 <Route path="/Tickets" element={<Tickets />} />
                 <Route path="/News" element={<News />} />
+                <Route path="/News/:storyId" element={<NewsStoryDetail />} />
             </Routes>
         </HashRouter>
     )
