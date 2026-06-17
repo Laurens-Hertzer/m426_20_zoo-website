@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
-import gorilla from "../assets/Gorilla.png";
-import flamingo from "../assets/Flamingo.png";
-import aligator from "../assets/Aligator.jpeg";
+import gorilla from "../assets/Gorilla-detail.webp";
+import flamingo from "../assets/Flamingo-detail.webp";
+import aligator from "../assets/Aligator-detail.webp";
 
 export const newsData = {
     "gorilla": {

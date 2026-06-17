@@ -1,6 +1,6 @@
-import gorilla from "../assets/Gorilla.png"
-import flamingo from "../assets/Flamingo.png"
-import aligator from "../assets/Aligator.jpeg"
+import gorilla from "../assets/Gorilla-preview.webp"
+import flamingo from "../assets/Flamingo-preview.webp"
+import aligator from "../assets/Aligator-preview.webp"
 
 import NewsStoryPreview from "./NewsStoryPreview.jsx";
 
