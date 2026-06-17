@@ -39,7 +39,6 @@ a:hover{color:var(--c-accent)}
 
 /* --- Typografie --- */
 h1,h2,h3,h4{font-family:var(--f-display);line-height:1.2}
-h1{font-size:clamp(2.2rem,5vw,3.8rem);color:var(--c-surface)}
 h2{font-size:clamp(1.6rem,3vw,2.4rem);color:var(--c-primary);margin-bottom:var(--sp-md)}
 h3{font-size:1.25rem;color:var(--c-secondary);margin-bottom:var(--sp-sm)}
 h4{font-size:.9rem;text-transform:uppercase;letter-spacing:.08em;color:var(--c-accent)}
