@@ -57,13 +57,20 @@
 }
 
 /* HEADER */
-header {
+.site-header {
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: var(--c-dark);
     border-bottom: 2px solid var(--c-accent);
-    padding-inline: var(--sp-lg);
+    padding: 10px 20px;}
+
+.logo-link img {
+    height: 100px;
+    width: auto;
+    display: block;
 }
 
 .welcome_text {
