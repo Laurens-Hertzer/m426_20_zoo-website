@@ -1,11 +1,13 @@
 import pandas_img from '../assets/pandas.png'
 import baby_oil from '../assets/babyoil.png'
+import {useState} from "react";
 
-export default function shop() {
+export default function Shop() {
+    const [maxPrice, setMaxPrice] = useState(25);
+
     const ProductCard = ({image, name, price}) => {
         return (
             <div style={{
-
                 fontFamily: 'sans-serif',
                 border: '1px solid #e0e0e0',
                 borderRadius: '8px',
@@ -55,9 +57,14 @@ export default function shop() {
 
     return (
         <>
-            <div style={{ display: 'flex', flexDirection: 'row', gap: '12px' }}>
-                <ProductCard image={pandas_img} name="Pandas" price="9.99CHF"/>
-                <ProductCard image={baby_oil} name="Baby Oil" price="19.99CHF"/>
+            <h1>Shop</h1>
+            <div style={{marginBottom: '20px'}}>
+                <label style={{display: 'block', marginBottom: '8px'}}>Max. Preis: {maxPrice} CHF</label>
+                <input type="range" min="0" max="25" value={maxPrice} onChange={e => setMaxPrice(e.target.value)}/>
+            </div>
+            <div style={{display: 'flex', flexDirection: 'row', gap: '12px'}}>
+                {maxPrice >= 9.99 && <ProductCard image={pandas_img} name="Pandas" price="9.95CHF"/>}
+                {maxPrice >= 19.99 && <ProductCard image={baby_oil} name="Baby Oil" price="19.95CHF"/>}
             </div>
         </>
     )
