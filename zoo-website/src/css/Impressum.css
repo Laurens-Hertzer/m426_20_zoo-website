@@ -1,0 +1,42 @@
+/* Impressum.css */
+
+.impressum {
+    font-family: var(--f-body);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--sp-xl) var(--sp-lg);
+    line-height: 1.6;
+    color: var(--c-text);
+}
+
+.impressum h1 {
+    font-family: var(--f-display);
+    color: var(--c-primary);
+    margin-bottom: var(--sp-lg);
+}
+
+.impressum h2 {
+    font-family: var(--f-display);
+    color: var(--c-secondary);
+    font-size: 1.2rem;
+    margin-bottom: var(--sp-sm);
+}
+
+.impressum p {
+    color: var(--c-muted);
+    margin-bottom: var(--sp-sm);
+}
+
+.impressum a {
+    color: var(--c-primary);
+}
+
+.impressum a:hover {
+    color: var(--c-accent);
+}
+
+.impressum hr {
+    border: 0;
+    border-top: 1px solid var(--c-border);
+    margin: var(--sp-lg) 0;
+}

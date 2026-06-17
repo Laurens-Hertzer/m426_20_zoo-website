@@ -1,13 +1,17 @@
-import {useState} from 'react'
+
+import websitelogo from './assets/favicon.png'
 import './App.css'
-import Home from "./components/Home.jsx";
-import News from "./components/News.jsx";
+import Menu from './components/Menu'
+import '../src/css/zoo-zuerich-design.css'
 
 function App() {
-    const [count, setCount] = useState(0)
 
     return (
-        <News/>
+        <>
+            <header>
+                <Menu/>
+            </header>
+        </>
     )
 }
 
