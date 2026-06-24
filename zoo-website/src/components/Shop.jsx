@@ -62,7 +62,7 @@ export default function Shop() {
             <h1>Shop</h1>
             <div style={{marginBottom: '20px'}}>
                 <label style={{display: 'block', marginBottom: '8px'}}>Max. Preis: {maxPrice} CHF</label>
-                <input type="range" min="0" max="200" value={maxPrice} onChange={e => setMaxPrice(e.target.value)}/>
+                <input type="range" min="1" max="200" value={maxPrice} onChange={e => setMaxPrice(e.target.value)}/>
                 <label style={{display: 'block', marginBottom: '8px'}}>Kategorie</label>
                 <select onChange={(e) => setCategory(e.target.value)}>
                     <option value={"alles"}>Alles</option>
