@@ -6,7 +6,8 @@ import Impressum from "./Impressum.jsx"
 import Tickets from "./Tickets.jsx"
 import News from "./News.jsx";
 import NewsStoryDetail from "./NewsStoryDetail.jsx";
-
+import Home from "./Home.jsx";
+import Shop from "./Shop.jsx";
 
 export default function Menu() {
 
