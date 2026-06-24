@@ -1,9 +1,11 @@
 import pandas_img from '../assets/pandas.png'
-import baby_oil from '../assets/babyoil.png'
+import bottle from '../assets/bottle.jpeg'
+import pizza from '../assets/pizza.jpg'
 import {useState} from "react";
 
 export default function Shop() {
     const [maxPrice, setMaxPrice] = useState(25);
+    const [category, setCategory] = useState("alles")
 
     const ProductCard = ({image, name, price}) => {
         return (
@@ -21,10 +23,10 @@ export default function Shop() {
                     src={image}
                     alt={name}
                     style={{
-                        width: '100%',
-                        height: 'auto',
+                        height: '256px',
                         borderRadius: '4px',
-                        objectFit: 'cover'
+                        objectFit: 'cover',
+                        width: '256px'
                     }}
                 />
                 <span style={{
@@ -60,11 +62,19 @@ export default function Shop() {
             <h1>Shop</h1>
             <div style={{marginBottom: '20px'}}>
                 <label style={{display: 'block', marginBottom: '8px'}}>Max. Preis: {maxPrice} CHF</label>
-                <input type="range" min="0" max="25" value={maxPrice} onChange={e => setMaxPrice(e.target.value)}/>
+                <input type="range" min="0" max="200" value={maxPrice} onChange={e => setMaxPrice(e.target.value)}/>
+                <label style={{display: 'block', marginBottom: '8px'}}>Kategorie</label>
+                <select onChange={(e) => setCategory(e.target.value)}>
+                    <option value={"alles"}>Alles</option>
+                    <option value={"spielzeuge"}>Spielzeuge</option>
+                    <option value={"flaschen"}>Flaschen</option>
+                    <option value={"essen"}>Essen</option>
+                </select>
             </div>
             <div style={{display: 'flex', flexDirection: 'row', gap: '12px'}}>
-                {maxPrice >= 9.99 && <ProductCard image={pandas_img} name="Pandas" price="9.95CHF"/>}
-                {maxPrice >= 19.99 && <ProductCard image={baby_oil} name="Baby Oil" price="19.95CHF"/>}
+                {(category==="alles" || category==="spielzeuge") && maxPrice >= 9.95 && <ProductCard image={pandas_img} name="Pandas" price="9.95CHF"/>}
+                {(category==="alles" || category==="essen") && maxPrice >= 4.95 && <ProductCard image={pizza} name="Pizza" price="4.95CHF"/>}
+                {(category==="alles" || category==="flaschen") && maxPrice >= 19.95 && <ProductCard image={bottle} name="Zoo-Bottle" price="19.95CHF"/>}
             </div>
         </>
     )
