@@ -8,6 +8,7 @@ import News from "./News.jsx";
 import NewsStoryDetail from "./NewsStoryDetail.jsx";
 import Home from "./Home.jsx";
 import Map from "./Map.jsx";
+import Shop from "./Shop.jsx";
 
 export default function Menu() {
 
@@ -29,6 +30,7 @@ export default function Menu() {
                         <li><Link to="/Impressum" onClick={closeMenu}>Impressum</Link></li>
                         <li><Link to="/Datenschutz" onClick={closeMenu}>Datenschutz</Link></li>
                         <li><Link to="/Karte" onClick={closeMenu}>Karte</Link></li>
+                        <li><Link to="/Shop" onClick={closeMenu}>Souvenirs Shop</Link></li>
                     </ul>
                 </nav>
             </header>
@@ -36,6 +38,7 @@ export default function Menu() {
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/Datenschutz" element={<DataProtection/>}/>
+                    <Route path="/Shop" element={<Shop/>}/>
                     <Route path="/Impressum" element={<Impressum/>}/>
                     <Route path="/Tickets" element={<Tickets/>}/>
                     <Route path="/News" element={<News/>}/>
