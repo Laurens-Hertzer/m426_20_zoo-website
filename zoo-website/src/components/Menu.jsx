@@ -1,4 +1,6 @@
 import React, {useState} from "react"
+import Home from "../components/Home"
+import Shop from "../components/Shop.jsx"
 import {HashRouter, Route, Routes, Link} from "react-router-dom"
 import ZooImg from "../assets/favicon.png"
 import DataProtection from "./DataProtection.jsx"
@@ -6,6 +8,7 @@ import Impressum from "./Impressum.jsx"
 import Tickets from "./Tickets.jsx"
 import News from "./News.jsx";
 import NewsStoryDetail from "./NewsStoryDetail.jsx";
+import ZooReviews from "../components/ZooReviews.jsx";
 
 
 export default function Menu() {
@@ -28,6 +31,7 @@ export default function Menu() {
                         <li><Link to="/Impressum" onClick={closeMenu}>Impressum</Link></li>
                         <li><Link to="/Datenschutz" onClick={closeMenu}>Datenschutz</Link></li>
                         <li><Link to="/Shop" onClick={closeMenu}>Souvenirs Shop</Link></li>
+                        <li><Link to="/ZooReviews" onClick={closeMenu}>Reviews</Link></li>
                     </ul>
                 </nav>
             </header>
@@ -40,6 +44,7 @@ export default function Menu() {
                     <Route path="/Tickets" element={<Tickets/>}/>
                     <Route path="/News" element={<News/>}/>
                     <Route path="/News/:storyId" element={<NewsStoryDetail/>}/>
+                    <Route path="ZooReviews" element={<ZooReviews/>}/>
                 </Routes>
             </main>
         </HashRouter>
